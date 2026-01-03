@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<style>
+    html {
+        scroll-behavior: smooth;
+       scroll-padding-top: 60px; 
+    }
+</style>
+<style>
+    .card-noticia {
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        cursor: default;
+    }
+    .card-noticia:hover {
+        transform: translateY(-5px);
+        background-color: #252525 !important;
+        border-left-color: #F6E4A6 !important;
+    }
+    
+    /* EFEITO DE FADE E DESCER QUE VOCÊ PEDIU */
+    @keyframes fadeInDown {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .animar-entrada {
+        display: flex !important;
+        animation: fadeInDown 0.5s ease forwards;
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gus, o contador de histórias</title>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #000000; color: white; margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <nav style="
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.9); 
+    border-bottom: 2px solid #903E0E; 
+    z-index: 1000; 
+    display: flex; 
+    justify-content: center; 
+    gap: clamp(10px, 4vw, 30px); 
+    padding: 10px 0;
+">
+    <a href="#home" style="color: #C37E45; text-decoration: none; font-size: clamp(0.8rem, 2vw, 1.1rem); font-weight: bold;">Home</a>
+    <a href="#saga" style="color: #C37E45; text-decoration: none; font-size: clamp(0.8rem, 2vw, 1.1rem); font-weight: bold; ">A Saga</a>
+    <a href="#livros" style="color: #C37E45; text-decoration: none; font-size: clamp(0.8rem, 2vw, 1.1rem); font-weight: bold;">Livros</a>
+    <a href="#noticias" style="color: #C37E45; text-decoration: none; font-size: clamp(0.8rem, 2vw, 1.1rem); font-weight: bold;">Notícias</a>
+    <a href="#projetos" style="color: #C37E45; text-decoration: none; font-size: clamp(0.8rem, 2vw, 1.1rem); font-weight: bold;">Futuro</a>
+    <a href="#eu" style="color: #C37E45; text-decoration: none; font-size: clamp(0.8rem, 2vw, 1.1rem); font-weight: bold;">Euzito</a>
+</nav>
+
+<div style="height: 60px;"></div>
+
+
+    <div style="max-width: 900px; margin: 0 auto; padding: clamp(15px, 5%, 40px);">
+
+        <h1 id="home" style="color: #903E0E; text-align: center; font-size: clamp(1.6rem, 5vw, 2.8rem); margin-bottom: 30px;">
+            <b>Oi, me chamo Gustavo e amo escrever e criar histórias</b>
+        </h1>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: center; background-color: #C37E45; padding: clamp(15px, 3vw, 25px); border-radius: 8px; margin-bottom: 30px;">
+            <div style="flex: 2; min-width: 280px;">
+                <p style="color: black; text-align: left; font-size: clamp(1rem, 2.2vw, 1.15rem); line-height: 1.6; margin: 0;">
+                    <i>Sempre fui um garoto curioso e um dia em um pico de criatividade eu criei o Abismelion, meu querido personagem do meu livro "O Sinfonista do Fim dos Mundos" e depois de criar o personagem eu criei o livro em si e estou com a ambição de criar uma saga incrível chamada "Estrela da Alma" se quiser saber mais continue comigo por enquanto.</i>
+                </p>
+            </div>
+            <div style="flex: 1; text-align: center; min-width: 150px;">
+                <img src="https://iili.io/fhvq1eV.md.jpg" alt="Raposa" style="border: clamp(5px, 1vw, 10px) solid #903E0E; width: 100%; max-width: 160px; height: auto; border-radius: 4px;">
+            </div>
+        </div>
+
+        <p style="text-align: center; padding-bottom: 20px;">
+            <a href="https://www.wattpad.com/user/Gus09GG" style="color: #903E0E; font-size: clamp(1.1rem, 3vw, 1.3rem); font-weight: bold; text-decoration: underline;">
+                Clica aqui pra ler minhas histórias
+            </a>
+        </p>
+        
+<div style="height: 2px; background: linear-gradient(to right, #903E0E, #903E0E, transparent)"></div>
+        <div id="saga" style="color: #F6E4A6; margin-bottom: 10px;">
+            <h3 style="font-size: clamp(1.5rem, 4vw, 2.2rem); margin: 0; padding-top: 8px">Estrela da Alma</h3>
+        </div>
+        
+        <p style="font-family: 'UnifrakturMaguntia', cursive; font-size: clamp(1.1rem, 2.5vw, 1.4rem); line-height: 1.6; text-align: justify; color: #fdfdfd; padding-bottom: 20px;">
+            A saga da Estrela da Alma é uma conexão entre 7 universos distintos todos eles ligados por uma certa estrela, e isso é mostrado no fim de cada história. Esse compilado de livros são todos originais e eu posso dizer que são incríveis cada um do seu jeito único... Se prepare pra não querer largar até o último capítulo.
+        </p>
+<div style="height: 2px; background: linear-gradient(to right, transparent, #903E0E, transparent)"></div>
+        <h2 id="livros" style="text-align: center; font-size: clamp(1.8rem, 5vw, 3rem); color: #C37E45; margin-bottom: 40px;; padding-top: -20px; margin-top: 0px">
+            <i>Livros da saga</i>
+        </h2>
+
+        <div style="margin-bottom: 80px;">
+            <h3 style="color: #EA9898; font-size: clamp(1.2rem, 3vw, 1.6rem); margin-bottom: 8px;">Livro N° 1</h3>
+            <div style="display: flex; justify-content: space-between; font-size: clamp(0.85rem, 2vw, 1.1rem); color: #ccc; margin-bottom: 15px;">
+                <span>Status: <b>TERMINADO</b></span> 
+                <span>Capítulos: EXTRAS+11</span>
+            </div>
+            <div style="text-align: center; margin-bottom: 20px;">
+                <a href="https://www.wattpad.com/story/398137883">
+                    <img src="https://iili.io/fh8ukRn.md.jpg" alt="Banner Livro 1" style="border: 5px solid #EB7676; width: 100%; max-width: 650px; height: auto;">
+                </a>
+            </div>
+            <p style="text-align: justify; color: #EB7676; font-size: clamp(1rem, 2.2vw, 1.2rem); line-height: 1.5;">
+                Vibrações... será que todo o som é uma vibração? Ou será que toda vibração é um som? Abismelion, um garoto traumatizado descobre que mexer com isso pode custar coisas demais, e a vingança também...
+            </p>
+            <p style="text-align: center; margin-top: 20px;">
+                <a href="https://www.wattpad.com/story/398137883" style="font-size: clamp(1.4rem, 4vw, 2.2rem); font-family: 'UnifrakturMaguntia', cursive; color: #EABBBB; text-decoration: none;">
+                    O Sinfonista do Fim dos Mundos #¹
+                </a>
+            </p>
+        </div>
+
+        <div style="margin-bottom: 80px;">
+            <h3 style="color: #F2C59D; font-size: clamp(1.2rem, 3vw, 1.6rem); margin-bottom: 8px;">Livro N° 2</h3>
+            <div style="display: flex; justify-content: space-between; font-size: clamp(0.85rem, 2vw, 1.1rem); color: #ccc; margin-bottom: 15px;">
+                <span>Status: <b>TERMINADO</b></span> 
+                <span>Capítulos: EXTRAS+21</span>
+            </div>
+            <div style="text-align: center; margin-bottom: 20px;">
+                <a href="https://www.wattpad.com/story/401174958">
+                    <img src="https://iili.io/fhgRhbt.md.jpg" alt="Banner Livro 2" style="border: 5px solid #F39A4A; width: 100%; max-width: 650px; height: auto;">
+                </a>
+            </div>
+            <p style="text-align: justify; color: #F39A4A; font-size: clamp(1rem, 2.2vw, 1.2rem); line-height: 1.5;">
+                Será que um simples sentimento pode ser o suficiente para criar uma guerra? Será que se uma simples rebelião consegue acabar com uma guerra mais velha que os lideres da própria rebelião?
+            </p>
+            <p style="text-align: center; margin-top: 20px;">
+                <a href="https://www.wattpad.com/story/401174958" style="font-size: clamp(1.4rem, 4vw, 2.2rem); font-family: 'UnifrakturMaguntia', cursive; color: #F2D8C1; text-decoration: none;">
+                    Sistema do Coração #²
+                </a>
+            </p>
+        </div>
+
+        <div style="margin-bottom: 80px;">
+            <h3 style="color: #F2DD9D; font-size: clamp(1.2rem, 3vw, 1.6rem); margin-bottom: 8px;">Livro N° 3</h3>
+            <div style="display: flex; justify-content: space-between; font-size: clamp(0.85rem, 2vw, 1.1rem); color: #ccc; margin-bottom: 15px;">
+                <span>Status: <b>EM ANDAMENTO</b></span> 
+                <span>Capítulos: EXTRAS+17</span>
+            </div>
+            <div style="text-align: center; margin-bottom: 20px;">
+                <a href="https://www.wattpad.com/story/398137883">
+                    <img src="https://iili.io/fhrJ0rb.md.jpg" alt="Banner Livro 3" style="border: 5px solid #F2C94D; width: 100%; max-width: 650px; height: auto;">
+                </a>
+            </div>
+            <p style="text-align: justify; color: #F2C94D; font-size: clamp(1rem, 2.2vw, 1.2rem); line-height: 1.5;">
+                Há muito tempo, o Criador de Duares abandonou o mundo que construiu. No coração desse planeta perfeito, sob a terra dourada e os céus eternos, existe uma ferida viva chamada Cinnaris...
+            </p>
+            <p style="text-align: center; margin-top: 20px;">
+                <a href="https://www.wattpad.com/story/402486135" style="font-size: clamp(1.4rem, 4vw, 2.2rem); font-family: 'UnifrakturMaguntia', cursive; color: #F2E6C1; text-decoration: none;">
+                   Raízes no Abandono #³
+                </a>
+            </p>
+        </div>
+
+        <div style="margin-bottom: 80px;">
+            <h3 style="color: #25A55B; font-size: clamp(1.2rem, 3vw, 1.6rem); margin-bottom: 8px;">Livro N° 4</h3>
+            <div style="display: flex; justify-content: space-between; font-size: clamp(0.85rem, 2vw, 1.1rem); color: #ccc; margin-bottom: 15px;">
+                <span>Status: <b>NÃO INICIADO</b></span> 
+                <span>Capítulos: Rascunhos</span>
+            </div>
+            <div style="text-align: center; margin-bottom: 20px;">
+                <img src="https://iili.io/fhrhpRt.md.jpg" alt="Banner Livro 4" style="border: 5px solid #25A55B; width: 100%; max-width: 650px; height: auto;">
+            </div>
+            <p style="text-align: justify; color: #25A55B; font-size: clamp(1rem, 2.2vw, 1.2rem); line-height: 1.5;">
+                Os irmãos Haskel e Hazel não seriam perdoados por ignorar a magia dentro de si mesmos. No meio de uma tarde acham algo que o povo normal da cidade nem pensaria em ver...
+            </p>
+            <p style="text-align: center; margin-top: 20px;">
+                <a href="https://www.wattpad.com/story/402639194" style="font-size: clamp(1.4rem, 4vw, 2.2rem); font-family: 'UnifrakturMaguntia', cursive; color: #6BA583; text-decoration: none;">
+                    Um Codex Traçado #⁴
+                </a>
+            </p>
+        </div>
+
+        <div style="margin-bottom: 80px;">
+            <h3 style="color: #BDD2ED; font-size: clamp(1.2rem, 3vw, 1.6rem); margin-bottom: 8px;">Livro N° 5</h3>
+            <div style="display: flex; justify-content: space-between; font-size: clamp(0.85rem, 2vw, 1.1rem); color: #ccc; margin-bottom: 15px;">
+                <span>Status: <b>NÃO INICIADO</b></span> 
+                <span>Capítulos: Rascunhos</span>
+            </div>
+            <div style="text-align: center; margin-bottom: 20px;">
+                <img src="https://iili.io/fjFjhIR.md.jpg" alt="Banner Livro 5" style="border: 5px solid #3081ED; width: 100%; max-width: 650px; height: auto;">
+            </div>
+            <p style="text-align: justify; color: #3081ED; font-size: clamp(1rem, 2.2vw, 1.2rem); line-height: 1.5;">
+                Quando o Brasil perdeu suas cores, a missão de restaurar a alma do país caiu nas patas de Cleide, uma capivara de pavio curto, e João, um jacaré com problemas familiares. Entre lendas esquecidas e perigos reais, essa dupla improvável vai descobrir que salvar o Brasil é mais difícil do que atravessar o Pantanal sem sujar o pé.
+            </p>
+            <p style="text-align: center; margin-top: 20px;">
+                <a href="https://www.wattpad.com/story/402668901" style="font-size: clamp(1.4rem, 4vw, 2.2rem); font-family: 'UnifrakturMaguntia', cursive; color: #9ABFED; text-decoration: none;">
+                    Onde a Terra Sonha #⁵
+                </a>
+            </p>
+        </div>
+
+        <div style="margin-bottom: 80px;">
+            <h3 style="color: #AFB0DB; font-size: clamp(1.2rem, 3vw, 1.6rem); margin-bottom: 8px;">Livro N° 6</h3>
+            <div style="display: flex; justify-content: space-between; font-size: clamp(0.85rem, 2vw, 1.1rem); color: #ccc; margin-bottom: 15px;">
+                <span>Status: <b>NÃO INICIADO</b></span> 
+                <span>Capítulos: Rascunhos</span>
+            </div>
+            <div style="text-align: center; margin-bottom: 20px;">
+                <img src="https://iili.io/fjqfggs.md.jpg" alt="Banner Livro 6" style="border: 5px solid #4A4BDB; width: 100%; max-width: 650px; height: auto;">
+            </div>
+            <p style="text-align: justify; color: #4A4BDB; font-size: clamp(1rem, 2.2vw, 1.2rem); line-height: 1.5;">
+                Em uma cidade de silêncios perturbadores, um detetive mergulha em um caso que desafia a lógica e a própria sanidade. Entre becos sombrios e segredos enterrados, ele descobre que o labirinto mais perigoso não está nas ruas, mas na mente humana. Até onde vai a verdade quando a ilusão assume o controle?
+            </p>
+            <p style="text-align: center; margin-top: 20px;">
+                <a href="https://www.wattpad.com/story/402672406" style="font-size: clamp(1.4rem, 4vw, 2.2rem); font-family: 'UnifrakturMaguntia', cursive; color: #8E91DB; text-decoration: none;">
+                    Ecos entre Fragmentos #⁶
+                </a>
+            </p>
+        </div>
+        
+        <div style="margin-bottom: 80px;">
+            <h3 style="color: #A28AAD; font-size: clamp(1.2rem, 3vw, 1.6rem); margin-bottom: 8px;">Livro N° 7</h3>
+            <div style="display: flex; justify-content: space-between; font-size: clamp(0.85rem, 2vw, 1.1rem); color: #ccc; margin-bottom: 15px;">
+                <span>Status: <b>NÃO INICIADO</b></span> 
+                <span>Capítulos: 0</span>
+            </div>
+            <div style="text-align: center; margin-bottom: 20px;">
+              
+              <img src="https://iili.io/fjnrFgn.md.jpg" alt="Banner Livro 6" style="border: 5px solid #8D44AD; width: 100%; max-width: 650px; height: auto;">
+               
+            </div>
+            <p style="text-align: justify; color: #8D44AD; font-size: clamp(1rem, 2.2vw, 1.2rem); line-height: 1.5;">
+                Onde tudo se conectará em um só. Onde histórias se entrelação e se sobrepõem numa só, se o costureiro so7ber usar elas tudo se fará novo... se não... o caos se intalará em seu planeta natal...
+            </p>
+            <p style="text-align: center; margin-top: 20px;">
+                <a href="https://www.wattpad.com/story/402672406" style="font-size: clamp(1.4rem, 4vw, 2.2rem); font-family: 'UnifrakturMaguntia', cursive; color: #9A70AD; text-decoration: none;">
+                    ¿Profundo Reunido? #⁷
+                </a>
+            </p>
+        </div>
+        
+
+<div id="noticias" style="margin-top: 80px; padding-top: 40px; border-top: 2px solid #903E0E;">
+    <h2 style="text-align: center; color: #F6E4A6; font-family: 'UnifrakturMaguntia', cursive; font-size: 2.5rem; margin-bottom: 30px;">
+        📜 Mural do Escritor
+    </h2>
+
+    <div id="container-noticias" style="display: flex; flex-direction: column; gap: 20px;">
+        <div class="card-noticia" style="background-color: #1a1a1a; border-left: 5px solid #C37E45; padding: 20px; border-radius: 4px;">
+            <span style="color: #C37E45; font-size: 0.8rem;">04 de Janeiro, 2026</span>
+            <h4 style="margin: 5px 0; color: #F6E4A6;">PROJETOS</h4>
+            <p style="margin: 0; color: #ccc;">Oi Pessoal, hoje junto com o site eu estou trabalhando em diversos outros projetos novos (prometo que faço!!!) e por isso semana passada não teve capítulo novo de <a style="color: #F2C94D"><b><i>Raizes no Abandono</b></i></a>, mas podem ficar tranquilos que eu não parei ouviram, tenho planos para o próximo capítulo, Amocês</p>
+        </div>
+        <div class="card-noticia" style="background-color: #1a1a1a; border-left: 5px solid #C37E45; padding: 20px; border-radius: 4px;">
+            <span style="color: #C37E45; font-size: 0.8rem;">04 de Jan, 2026</span>
+            <h4 style="margin: 5px 0; color: #F6E4A6;">SITE NOVO?!</h4>
+            <p style="margin: 0; color: #ccc;">Eu criei esse site pra ser nosso canto de interação e pra mim ganhar mais engajamento kkkkk, espero que vocês gostem.</p>
+        </div>
+
+        <div id="noticias-extras" style="display: none; flex-direction: column; gap: 20px;">
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 30px;">
+        <button id="btn-ver-mais" onclick="mostrarNoticias()" style="background: transparent; padding: 10px 25px; border: 1px solid #903E0E; color: #C37E45; border-radius: 20px; cursor: pointer; font-size: 0.9rem; transition: all 0.3s;">
+            Ver todas as notícias ↓
+        </button>
+    </div>
+</div>
+
+<div id="projetos" style="margin-top: 80px; padding: 40px 20px; background: linear-gradient(180deg, #000 0%, #0a0a0a 100%); border: 1px dashed #444; border-radius: 15px;">
+    
+    <h2 style="text-align: center; color: #903E0E; font-family: 'UnifrakturMaguntia', cursive; font-size: clamp(1.8rem, 5vw, 2.5rem); margin-bottom: 10px;">
+        🔮 Horizontes Distantes
+    </h2>
+    <p style="text-align: center; color: #888; margin-bottom: 40px; font-style: italic;">
+        Ideias que estão ganhando vida no silêncio da madrugada...
+    </p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
+        
+        <div style="background: #111; border: 1px solid #222; padding: 20px; border-radius: 10px; position: relative; overflow: hidden; min-height: 160px;" 
+             onmouseover="this.querySelector('.capa').style.opacity='1'" onmouseout="this.querySelector('.capa').style.opacity='0'">
+            
+            <div class="capa" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('https://iili.io/fjtlczJ.md.png') center/cover; opacity: 0; transition: opacity 0.4s ease; z-index: 2; display: flex; align-items: center; justify-content: center; background-color: rgba(0,0,0,0.7);">
+                <span style="color: white; font-weight: bold; border: 1px solid white; padding: 5px 10px;">VER CAPA</span>
+            </div>
+
+            <span style="position: absolute; top: 10px; right: -30px; background: #903E0E; color: white; padding: 5px 40px; transform: rotate(45deg); font-size: 0.7rem; font-weight: bold; z-index: 1;">Em Breve</span>
+            <h4 style="color: #F6E4A6; margin: 0 0 10px 0; font-size: 1.2rem;">Projeto "Negativo"</h4>
+            <p style="color: #777; font-size: 0.9rem; line-height: 1.4;">
+                Após a estrela da alma ter o fim que teve uma nova criou-se na terra... e os eventos dela foram diversos, desde o começo e o fim dos tempos.
+            </p>
+        </div>
+
+        <div style="background: #111; border: 1px solid #222; padding: 20px; border-radius: 10px; position: relative; overflow: hidden; min-height: 160px;" 
+             onmouseover="this.querySelector('.capa').style.opacity='1'" onmouseout="this.querySelector('.capa').style.opacity='0'">
+            
+            <div class="capa" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('https://iili.io/fjt8VOG.md.jpg') center/cover; opacity: 0; transition: opacity 0.4s ease; z-index: 2; display: flex; align-items: center; justify-content: center; background-color: rgba(0,0,0,0.7);">
+                <span style="color: white; font-weight: bold; border: 1px solid white; padding: 5px 10px;">PARA MINHA AMADA</span>
+            </div>
+
+            <span style="position: absolute; top: 10px; right: -30px; background: #903E0E; color: white; padding: 5px 40px; transform: rotate(45deg); font-size: 0.7rem; font-weight: bold; z-index: 1;">Em Breve</span>
+            <h4 style="color: #F6E4A6; margin: 0 0 10px 0; font-size: 1.2rem;">Minha distância Perfecta</h4>
+            <p style="color: #777; font-size: 0.9rem; line-height: 1.4;">
+                Essa será um livro presente, conta a história minha e da minha namorada em uma ficção de um encontro que eu planejei... Amo vocé minha corujinha!
+            </p>
+        </div>
+    </div>
+</div>
+            
+            <div id="eu" style="margin-top: 60px; padding: clamp(20px, 5%, 40px); background-color: #1a1a1a; border-radius: 12px; border: 1px solid #333;">
+    
+    <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center; justify-content: center;">
+        
+        <div style="flex: 1; min-width: 250px; text-align: center;">
+            <div style="position: relative; display: inline-block;">
+                <img src="https://iili.io/fjxQDog.md.png" alt="Gustavo" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%; border: 4px solid #903E0E; box-shadow: 0 0 20px rgba(144, 62, 14, 0.4);">
+                <div style="position: absolute; bottom: 10px; right: 10px; background: #903E0E; color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">Escritor</div>
+            </div>
+        </div>
+
+        <div style="flex: 2; min-width: 300px;">
+            <h2 style="color: #F6E4A6; margin-top: 0; font-size: clamp(1.5rem, 4vw, 2.2rem);">Um pouco sobre o autor...</h2>
+            
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
+        
+            <p style="color: #ccc; line-height: 1.6; font-size: clamp(1rem, 2vw, 1.1rem); text-align: justify;">
+                Olá! Eu sou o <b>Gustavo</b>. Desde cedo, minha mente sempre foi um caldeirão de ideias e mundos distantes. O que começou como curiosidade se transformou na saga <i>"Estrela da Alma"</i>. 
+                <br><br>
+                Acredito que escrever é a forma mais pura de magia: a capacidade de transportar alguém para outra realidade apenas com palavras. Quando não estou perdido em rascunhos de mistério ou planejando o próximo passo de diversas tramas (principalmente dramáticos), estou explorando novas formas de contar histórias que toquem a alma e desafiem a imaginação.
+                <br><br>
+                <a style="font-size: 18px"><b>"Faça tudo aquilo que lhe traz imensa alegria. Esse é o seu luxo."</b></a>
+                <br>
+            <p style=" text-align: right; margin-top: -50px">
+            —
+                <a style="color: #03823F; "> Tyler, The Creator</a>
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px; margin-top: -10px; border-top: 1px solid #333; padding-top: 20px;">
+                <div>
+                    <span style="color: #903E0E; font-weight: bold; display: block;">📍 Origem</span>
+                    <span style="color: #eee; font-size: 0.9rem;">Rio de Janeiro, Brasil</span>
+                </div>
+                <div>
+                    <span style="color: #903E0E; font-weight: bold; display: block;">✍️ Estilo</span>
+                    <span style="color: #eee; font-size: 0.9rem;">Romance, Aventura</span>
+                </div>
+                <div>
+                    <span style="color: #903E0E; font-weight: bold; display: block;">🌟 Meta</span>
+                    <span style="color: #eee; font-size: 0.9rem;">Entreter todos os leitores</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<div style="position: fixed; bottom: 20px; right: 20px; z-index: 10000; display: flex; flex-direction: column; gap: 15px;">
+    
+    <a href="https://www.instagram.com/gusta_avdol" target="_blank" 
+       style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.4); text-decoration: none; transition: all 0.3s ease;" 
+       onmouseover="this.style.transform='scale(1.1)';" 
+       onmouseout="this.style.transform='scale(1)';">
+        <i class="fab fa-instagram" style="color: white; font-size: 28px;"></i>
+    </a>
+
+    <a href="https://wa.me/5521975420847" target="_blank" 
+       style="background-color: #25d366; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.4); text-decoration: none; transition: all 0.3s ease;" 
+       onmouseover="this.style.transform='scale(1.1)'; this.style.backgroundColor='#128C7E'" 
+       onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#25d366'">
+        <i class="fab fa-whatsapp" style="color: white; font-size: 30px;"></i>
+    </a>
+
+    <a href="mailto:davidemorettigular@email.com" 
+       style="background-color: #903E0E; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.4); text-decoration: none; transition: all 0.3s ease;" 
+       onmouseover="this.style.transform='scale(1.1)'; this.style.backgroundColor='#C37E45'" 
+       onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#903E0E'">
+        <i class="fas fa-envelope" style="color: white; font-size: 25px;"></i>
+    </a>
+</div>
+
+<footer style="margin-top: 100px; padding: 40px 20px; background-color: #0a0a0a; border-top: 2px solid #903E0E; text-align: center;">
+    
+    <div style="margin-bottom: 20px;">
+        <h3 style="color: #C37E45; font-family: 'UnifrakturMaguntia', cursive; font-size: 1.8rem; margin-bottom: 10px;">
+            Gus, o contador de histórias
+        </h3>
+        <p style="color: #888; font-size: 0.9rem; max-width: 500px; margin: 0 auto;">
+            Explorando os 7 universos da Estrela da Alma. Obrigado por fazeres parte desta jornada literária.
+        </p>
+    </div>
+
+    <div style="margin: 20px 0; display: flex; justify-content: center; gap: 20px;">
+        <a href="https://www.wattpad.com/user/Gus09GG" style="color: #ccc; text-decoration: none; font-size: 0.9rem;" onmouseover="this.style.color='#903E0E'" onmouseout="this.style.color='#ccc'">Wattpad</a>
+        <a href="#eu" style="color: #ccc; text-decoration: none; font-size: 0.9rem;" onmouseover="this.style.color='#903E0E'" onmouseout="this.style.color='#ccc'">Sobre Mim</a>
+        <a href="#noticias" style="color: #ccc; text-decoration: none; font-size: 0.9rem;" onmouseover="this.style.color='#903E0E'" onmouseout="this.style.color='#ccc'">Notícias</a>
+    </div>
+
+    <div style="border-top: 1px solid #222; padding-top: 20px; color: #555; font-size: 0.8rem;">
+        &copy; 2026 Gustavo - Todos os direitos reservados. <br>
+        <i>"A luz da Estrela da Alma brilha em todos os mundos."</i>
+    </div>
+</footer>
+
+    </div> 
+    
+    <script>
+function mostrarNoticias() {
+    var extras = document.getElementById("noticias-extras");
+    var btn = document.getElementById("btn-ver-mais");
+
+    // Verifica se as notícias estão escondidas
+    if (extras.style.display === "none" || extras.style.display === "") {
+        extras.style.display = "flex"; // Mostra a div
+        extras.classList.add("animar-entrada"); // Aplica o efeito de descer e fade
+        btn.innerHTML = "Ver menos ↑";
+    } else {
+        // Se já estiverem aparecendo, faz o seguinte:
+        extras.style.display = "none"; // Esconde a div
+        extras.classList.remove("animar-entrada"); // Reseta a animação para a próxima vez
+        btn.innerHTML = "Ver todas as notícias ↓";
+        
+        // Sobe a tela suavemente para o início da seção de notícias
+        document.getElementById('noticias').scrollIntoView({behavior: 'smooth'});
+    }
+}
+</script>
+</body>
+</html>
