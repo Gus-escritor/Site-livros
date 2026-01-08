@@ -239,36 +239,41 @@
     <h2 style="text-align: center; color: #F6E4A6; font-family: 'UnifrakturMaguntia', cursive; font-size: 2.5rem; margin-bottom: 30px;">
         📜 Mural do Escritor
     </h2>
-
-    <div id="container-noticias" style="display: flex; flex-direction: column; gap: 20px;">
-        
-        <div class="card-noticia" style="background-color: #1a1a1a; border-left: 5px solid #C37E45; padding: 20px; border-radius: 4px;">
-            <span style="color: #C37E45; font-size: 0.8rem;">6 de Jan, 2026</span>
-            <h4 style="margin: 5px 0; color: #F6E4A6;">NOVO</h4>
-            <p style="margin: 0; color: #ccc;">Hoje temos capítulo novo minhas little foxes. O capítulo 18, nomeado de Olfatos e Hotéis, na mesma vibe de nome dos outros capítulos de <span style="color: #F2C94D"><b><i>Raízes no Abandono</i></b></span>, espero que gostem mesmo com a pequena demora ;)</p>
+    
+    <div class="card-noticia" style="background-color: #1a1a1a; border-left: 5px solid #C37E45; padding: 20px; border-radius: 4px; margin-top: 20px">
+            <span style="color: #C37E45; font-size: 0.8rem;">8 de Jan, 2026</span>
+            <h4 style="margin: 5px 0; color: #C37E45;">ANÚNCIO</h4>
+            <p style="margin: 0; color: #ccc;">Pessoal amanhã as <b style="color: #C37E45">1h</b> eu vou postar o projeto que tenho trabalhado tanto e o motivo de eu ter atrasado alguns capítulos da obra atual, porém esse projeto é tão importante para mim quanto a pessoa para quem esse projeto é dedicado, espero que vocês amem a obra, que vai estar COMPLETA pra você devorar em um dia só! Amocês e principalmente você, meu amor. </p>
         </div>
 
-        <div class="card-noticia" style="background-color: #1a1a1a; border-left: 5px solid #C37E45; padding: 20px; border-radius: 4px;">
+        <div class="card-noticia" style="background-color: #1a1a1a; border-left: 5px solid #C37E45; padding: 20px; border-radius: 4px; margin-top: 20px">
+            <span style="color: #C37E45; font-size: 0.8rem;">6 de Jan, 2026</span>
+            <h4 style="margin: 5px 0; color: #F6E4A6;">NOVO</h4>
+            <p style="margin: 0; color: #ccc;">Hoje temos capítulo novo minhas little foxes. O capítulo 18, nomeado de Olfatos e Hotéis, na mesma vibe de nome dos outros capítulos de <span style=”color: #F2C94D”><b><i>Raízes no Abandono, </span></b></i> espero que gostem mesmo com a pequena demora ;)</p>
+        </div>
+        <div class="card-noticia" style="background-color: #1a1a1a; border-left: 5px solid #C37E45; padding: 20px; border-radius: 4px; margin-top: 20px">
             <span style="color: #C37E45; font-size: 0.8rem;">04 de Jan, 2026</span>
             <h4 style="margin: 5px 0; color: #F6E4A6;">ATUALIZAÇÃO</h4>
             <p style="margin: 0; color: #ccc;">E aí pessoal, já estou trabalhando em um capítulo novo de <span style="color: #F2C94D"><b><i>Raizes no Abandono</i></b></span>. Podem esperar por situações bombasticas! </p>
         </div>
-
-        <div class="card-noticia" style="background-color: #1a1a1a; border-left: 5px solid #C37E45; padding: 20px; border-radius: 4px;">
+ <!-- < Aqui bota aqui a noticia nova -->
+                
+        <div id="noticias-extras" style="display: none; flex-direction: column; gap: 20px;">
+          <div class="card-noticia" style="background-color: #1a1a1a; border-left: 5px solid #C37E45; padding: 20px; border-radius: 4px; margin-top: 20px">
             <span style="color: #C37E45; font-size: 0.8rem;">03 de Janeiro, 2026</span>
             <h4 style="margin: 5px 0; color: #F6E4A6;">PROJETOS</h4>
             <p style="margin: 0; color: #ccc;">Oi Pessoal, hoje junto com o site eu estou trabalhando em diversos outros projetos novos e por isso semana passada não teve capítulo novo de <span style="color: #F2C94D"><b><i>Raizes no Abandono</i></b></span>. Podem ficar tranquilos, tenho planos para o próximo capítulo!</p>
         </div>
-
-        <div id="noticias-extras" style="display: none; flex-direction: column; gap: 20px;">
-             <div class="card-noticia" style="background-color: #1a1a1a; border-left: 5px solid #C37E45; padding: 20px; border-radius: 4px;">
-                <span style="color: #C37E45; font-size: 0.8rem;">03 de Jan, 2026</span>
-                <h4 style="margin: 5px 0; color: #F6E4A6;">SITE NOVO?!</h4>
-                <p style="margin: 0; color: #ccc;">Eu criei esse site pra ser nosso canto de interação e pra ganhar mais engajamento kkkkk, espero que vocês gostem.</p>
-            </div>
+            <div class="card-noticia" style="background-color: #1a1a1a; border-left: 5px solid #C37E45; padding: 20px; border-radius: 4px;">
+            <span style="color: #C37E45; font-size: 0.8rem;">03 de Jan, 2026</span>
+            <h4 style="margin: 5px 0; color: #F6E4A6;">SITE NOVO?!</h4>
+            <p style="margin: 0; color: #ccc;">Eu criei esse site pra ser nosso canto de interação e pra ganhar mais engajamento kkkkk, espero que vocês gostem.</p>
         </div>
+             <!-- < Aqui tu bota a noticia velha -->
+        </div>
+    </div>
 
-    </div> <div style="text-align: center; margin-top: 30px;">
+    <div style="text-align: center; margin-top: 30px;">
         <button id="btn-ver-mais" onclick="mostrarNoticias()" style="background: transparent; padding: 10px 25px; border: 1px solid #903E0E; color: #C37E45; border-radius: 20px; cursor: pointer; font-size: 0.9rem; transition: all 0.3s;">
             Ver todas as notícias ↓
         </button>
@@ -399,14 +404,19 @@ function mostrarNoticias() {
     var extras = document.getElementById("noticias-extras");
     var btn = document.getElementById("btn-ver-mais");
 
+    // Se as notícias estiverem escondidas
     if (extras.style.display === "none" || extras.style.display === "") {
-        extras.style.display = "flex"; 
-        extras.classList.add("animar-entrada");
+        extras.style.display = "flex"; // Abre a div
+        extras.classList.add("animar-entrada"); // Começa a animação
         btn.innerHTML = "Ver menos ↑";
-    } else {
-        extras.classList.remove("animar-entrada");
-        extras.style.display = "none";
+    } 
+    // Se as notícias já estiverem aparecendo (hora de fechar)
+    else {
+        extras.classList.remove("animar-entrada"); // TIRA a animação (importante!)
+        extras.style.display = "none"; // Esconde de verdade
         btn.innerHTML = "Ver todas as notícias ↓";
+        
+        // Sobe a tela suavemente para o título das notícias
         document.getElementById('noticias').scrollIntoView({behavior: 'smooth'});
     }
 }
